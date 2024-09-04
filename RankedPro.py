@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import ranking as rk
 
-
+st.set_page_config(page_title='RankedPro', page_icon=None)
 
 #------|CONFIG|----------#
 # if __name__ == "__main__":
