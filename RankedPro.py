@@ -2,11 +2,10 @@ import streamlit as st
 import pandas as pd
 
 #------|CONFIG|----------#
-if __name__ == "__main__":
-    import os
-    port = int(os.environ.get("PORT", 8501))
-    st.run("RankedPro.py", server_port=port)
-
+# if __name__ == "__main__":
+#     import os
+#     port = int(os.environ.get("PORT", 8501))
+#     st.run("RankedPro.py", server_port=port)
 
 #--------| TOPO | --------#
 head = st.container()
