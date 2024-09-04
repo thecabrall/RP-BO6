@@ -16,7 +16,7 @@ h1,h2,h3 = st.columns(3)
 body = st.container()
 a1,a2,a3,a4 = st.columns(4)
 
-st.set_page_config('Ranked Pro','favicon.ico')
+st.set_page_config(page_title='RankedPro')
 
 with head:
     with h2:
