@@ -12,3 +12,7 @@ textColor="#ffffff"
 
 [client]
 showSidebarNavigation = false
+
+[ui]
+favicon = "favicon.ico"
+pageTitle = "Ranked Pro"

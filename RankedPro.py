@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import ranking as rk
 
+
+
 #------|CONFIG|----------#
 # if __name__ == "__main__":
 #     import os
