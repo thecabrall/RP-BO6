@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import ranking as rk
 
 #------|CONFIG|----------#
 # if __name__ == "__main__":
@@ -13,12 +14,13 @@ h1,h2,h3 = st.columns(3)
 
 #--------| MEIO | --------#
 body = st.container()
-a1,a2,a3,a4,a5 = st.columns(5)
+a1,a2,a3,a4 = st.columns(4)
 
 
 with head:
     with h2:
         logo = st.image('ranked-white.png')
+
 
 
 with body:
@@ -28,6 +30,7 @@ with body:
         pf = int(st.number_input('Pontos Atuais',key='pf'))
     with a3:
         res = pf - pi
-        stats = st.metric(label='Ganhos Atuais',value=f'{res}')
+        rank,logo = rk.rank(pf)
+        stats = st.metric(label='Ranking Atual',value=f'{rank}',delta=f'{res}')
     with a4:
-        st.write('...')
+        st.image(f'{logo}')

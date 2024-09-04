@@ -1,6 +1,4 @@
 
-import streamlit as st
-
 def rank(pontos):    
     if pontos <= 299:
         divisao = "Bronze I"
